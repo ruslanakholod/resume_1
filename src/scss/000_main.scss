@@ -1,0 +1,54 @@
+@import '_variable';
+@import "_header";
+@import "_skills-contacts";
+@import "_projects";
+@import "_slider";
+@font-face {
+  font-family: Quando;
+  src: url("../fonts/Quando-Regular.ttf");
+}
+@font-face {
+  font-family: Helvetica;
+  src: url("../fonts/helvetica-roman.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  margin: 0;
+  line-height: 1.5;
+  background-image: url("../images/black_background.jpg");
+  background-size: cover;
+  h1,
+  h2,
+  h3 {
+    font-family: Quando, sans-serif;
+  }
+  p,
+  li {
+    font-family: Helvetica, sans-serif;;
+  }
+  h2 {
+    text-align: center;
+  }
+  @media (max-width: $TABLET_START) {
+    background-image: none;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 860px;
+    width: 100%;
+    min-width: 320px;
+    border-top: 3px solid black;
+    background-color: white;
+    .content {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

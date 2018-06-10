@@ -1,0 +1,44 @@
+#skills {
+  padding: 150px 0;
+  .list-skills {
+
+    width: 250px;
+    display: inline-block;
+    margin-top: 25px;
+  .skill {
+     list-style-type: none;
+     text-align: left;
+     font-size: 20px;
+   }
+  .skill:before {
+   content: '\2666';
+   float: left;
+   padding: 0 10px 0 0;
+  }
+ }
+}
+#contacts {
+  padding: 40px 0;
+  text-align: center;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    li {
+      margin: 0 20px;
+      list-style: none;
+      img {
+        width: 55px;
+      }
+      #gmail {
+      }
+      button {
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+      }
+    }
+  }
+}
