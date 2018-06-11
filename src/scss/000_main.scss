@@ -1,15 +1,15 @@
 @import '_variable';
-@import "_header";
-@import "_skills-contacts";
-@import "_projects";
-@import "_slider";
+@import '_header';
+@import '_skills-contacts';
+@import '_projects';
+@import '_slider';
 @font-face {
   font-family: Quando;
-  src: url("../fonts/Quando-Regular.ttf");
+  src: url('../fonts/Quando-Regular.ttf');
 }
 @font-face {
   font-family: Helvetica;
-  src: url("../fonts/helvetica-roman.otf");
+  src: url('../fonts/helvetica-roman.otf');
 }
 
 * {
@@ -22,19 +22,20 @@ body {
   max-width: 100%;
   margin: 0;
   line-height: 1.5;
-  background-image: url("../images/black_background.jpg");
+  background-image: url('../images/black_background.jpg');
   background-size: cover;
-  h1,
-  h2,
-  h3 {
+  h1 {
     font-family: Quando, sans-serif;
   }
+  h2,
   p,
-  li {
-    font-family: Helvetica, sans-serif;;
+  li,
+  h3 {
+    font-family: Helvetica, sans-serif;
   }
   h2 {
     text-align: center;
+    font-size: 22px;
   }
   @media (max-width: $TABLET_START) {
     background-image: none;

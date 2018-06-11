@@ -1,84 +1,105 @@
+@import '_variable';
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  margin-top: 120px;
   border-radius: 2px;
   .header-top {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
     &--photo {
+      margin: 0 20px;
       img {
-        width: 300px;
+        width: 200px;
         @media (min-width: $MOBILE-L_START - 1px) and (max-width: $TABLET_START - 1px) {
-          width: 250px;
+          width: 200px;
         }
-        @media (min-width: $MOBILE-S_START ) and (max-width: $MOBILE-L_START) {
-          width: 150px;
+        @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START) {
+          width: 170px;
         }
+      }
+      @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START) {
+        margin: 0;
       }
     }
     &--name {
-      margin-bottom: 35px;
+      margin: 0 20px;
       h1 {
-        @media (min-width: $MOBILE-S_START ) and (max-width: $MOBILE-L_START + 20px) {
-          font-size: 21px;
+        @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START + 20px) {
+          font-size: 23px;
         }
       }
       h3 {
-        margin-top: 15px;
-        color: #212121;
-        @media (min-width: $MOBILE-S_START ) and (max-width: $MOBILE-L_START + 20px) {
-          font-size: 15px;
+        color: #777;
+        font-weight: 400;
+        @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START + 20px) {
+          font-size: 18px;
         }
       }
-      @media (min-width: $MOBILE-S_START ) and (max-width: $MOBILE-L_START + 20px) {
+      @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START + 20px) {
         margin-bottom: 8px;
+      }
+      @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START) {
+        margin: 0;
       }
     }
   }
   &--bottom {
     p {
       text-align: left;
-      margin-top: 15px;
+      margin: 40px 0;
+      font-size: 19px;
     }
   }
   &--btn {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  li {
-    width: 130px;
-    margin: 0 10px;
-    border: 4px #212121 outset;
-    border-radius: 2px;
-    list-style: none;
-    @media (min-width: $MOBILE-L_START - 1px) and (max-width: $TABLET_START) {
-      margin: 0 5px;
-      width: 100px;
-    }
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    li {
+      width: 130px;
+      margin: 0 39px;
+      border: 2px #111 solid;
+      border-radius: 2px;
+      list-style: none;
+      @media (min-width: $MOBILE-L_START - 1px) and (max-width: $TABLET_START) {
+        margin: 0 20px;
+        width: 100px;
+      }
 
-    @media (min-width: $MOBILE-S_START ) and (max-width: $MOBILE-L_START) {
-      margin: 0 2px;
-      width: 80px;
-    }
-    a {
-      display: block;
-      padding: 7px 10px;
-      text-decoration: none;
-      color: #000;
-      @media (min-width: $MOBILE-S_START ) and (max-width: $MOBILE-L_START) {
-        padding: 5px 2px;
+      @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START) {
+        margin: 10px 0px;
+        width: 150px;
       }
-      &:hover {
-        transition: 1s all;
-        background-color: #171717;
-        color: white;
+      a {
+        display: block;
+        padding: 8px 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START) {
+          padding: 5px 10px;
+        }
+        &:hover {
+          transition: 0.5s all;
+          background-color: #171717;
+          color: white;
+        }
       }
     }
-   }
+    @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START + 20px) {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START + 20px) {
+    margin-top: 50px;
   }
 }

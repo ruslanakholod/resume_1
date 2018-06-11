@@ -1,35 +1,39 @@
+@import '_variable';
 #skills {
-  padding: 150px 0;
+  padding: 60px 0;
   .list-skills {
-
     width: 250px;
     display: inline-block;
-    margin-top: 25px;
-  .skill {
-     list-style-type: none;
-     text-align: left;
-     font-size: 20px;
-   }
-  .skill:before {
-   content: '\2666';
-   float: left;
-   padding: 0 10px 0 0;
+    margin-top: 30px;
+    .skill {
+      list-style-type: disc;
+      list-style-position: inside;
+      text-align: left;
+      font-size: 19px;
+    }
+    .skill:before {
+      float: left;
+      padding: 0 10px 0 0;
+    }
   }
- }
+  @media (min-width: $MOBILE-S_START) and (max-width: $MOBILE-L_START) {
+    padding: 50px 0;
+  }
 }
 #contacts {
-  padding: 40px 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
   text-align: center;
   ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 15px;
     li {
       margin: 0 20px;
       list-style: none;
       img {
-        width: 55px;
+        width: 45px;
       }
       #gmail {
       }
