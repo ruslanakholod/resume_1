@@ -1,4 +1,22 @@
 @import '_variable';
+#work-experience {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  h2 {
+    padding-bottom: 30px;
+  }
+  a {
+    text-align: center !important;
+    padding: 1px;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    color: black;
+  }
+  p {
+    text-align: left;
+    font-size: 19px;
+  }
+}
 #project {
   padding-top: 60px;
   .project--content {
